@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html>
+<head>
+   <meta charset=utf-8>
+   <title>Определение дня недели</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="wrapper">
+  <p>Здесь вы можете определить каким днём недели была/будет интересующая вас дата<br>
+  Для это введите ниже данные в формате 1 01 1999 </p>
+  <form action="result.php" method="post">
+    <label>Число
+    <br>
+    <input type="text" pattern="[0-9]{1,2}" name="chosen_day" required></label>
+    <br><br>
+    <label>Месяц
+    <br>
+    <input type="text" pattern="[0-9]{1,2}" name="chosen_month" required></label>
+    <br><br>
+    <label>Год
+    <br>
+    <input type="text" pattern="[0-9]{4}" name="chosen_year" required></label>
+    <br><br>
+    <input type="submit" value="Узнать день недели">
+  </form>
+  </div>
+</body>
+</html>
